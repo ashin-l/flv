@@ -12,7 +12,12 @@
       <video-player :videoID="(i - 1) * 3 + 3"></video-player>
     </div>
     -->
-    <video-player :videoID="1"></video-player>
+    <div class="flex-row">
+      <video-player :videoID="101" :vurl="vurl1"></video-player>
+    </div>
+    <div class="flex-row">
+      <video-player :videoID="401" :vurl="vurl2"></video-player>
+    </div>
   </div>
 </template>
 
@@ -24,7 +29,8 @@ export default {
   },
   data () {
     return {
-
+      vurl1: encodeURIComponent("rtsp://admin:ai123456@192.168.160.101:554/h264/ch1/main/av_stream"),
+      vurl2: encodeURIComponent("rtsp://admin:admin123@192.168.160.109:554/cam/realmonitor?channel=1&subtype=0")
     }
   },
   mounted () {
