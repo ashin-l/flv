@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.4.3",
     "flv.js": "^1.5.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "video.js": "7.3.0",
     "videojs-flash": "^2.1.2",
     "vue-router": "^3.0.1",
